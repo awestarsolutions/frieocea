@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Freiocea Logistics | Precision Freight Solutions</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "inverse-primary": "#a3cbf2",
+                        "secondary": "#994700",
+                        "primary-container": "#0b3c5d",
+                        "background": "#f8f9fa",
+                        "secondary-container": "#fb7800",
+                        "on-tertiary-fixed-variant": "#663e0e",
+                        "on-secondary-fixed": "#321200",
+                        "outline-variant": "#c2c7ce",
+                        "surface-container-high": "#e7e8e9",
+                        "error-container": "#ffdad6",
+                        "secondary-fixed-dim": "#ffb68b",
+                        "on-tertiary-fixed": "#2c1600",
+                        "on-surface-variant": "#42474e",
+                        "surface-container-low": "#f3f4f5",
+                        "on-primary-container": "#7fa7cd",
+                        "tertiary": "#371d00",
+                        "on-tertiary-container": "#ce9760",
+                        "outline": "#72777e",
+                        "surface-variant": "#e1e3e4",
+                        "on-secondary-fixed-variant": "#753400",
+                        "surface": "#f8f9fa",
+                        "surface-tint": "#396285",
+                        "on-primary-fixed": "#001d32",
+                        "surface-container": "#edeeef",
+                        "on-error": "#ffffff",
+                        "surface-container-highest": "#e1e3e4",
+                        "on-error-container": "#93000a",
+                        "on-primary": "#ffffff",
+                        "primary-fixed": "#cee5ff",
+                        "tertiary-container": "#553001",
+                        "surface-bright": "#f8f9fa",
+                        "surface-container-lowest": "#ffffff",
+                        "inverse-surface": "#2e3132",
+                        "on-tertiary": "#ffffff",
+                        "primary": "#00263f",
+                        "on-surface": "#191c1d",
+                        "tertiary-fixed-dim": "#f6bb80",
+                        "inverse-on-surface": "#f0f1f2",
+                        "on-background": "#191c1d",
+                        "error": "#ba1a1a",
+                        "tertiary-fixed": "#ffdcbd",
+                        "on-secondary": "#ffffff",
+                        "secondary-fixed": "#ffdbc8",
+                        "primary-fixed-dim": "#a3cbf2",
+                        "on-secondary-container": "#592600",
+                        "surface-dim": "#d9dadb",
+                        "on-primary-fixed-variant": "#1f4a6c"
+                    },
+                    fontFamily: {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    },
+                    borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #00263f 0%, #0b3c5d 100%);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-secondary-container/30">
+<!-- TopNavBar -->
+<nav class="docked full-width top-0 sticky z-50 bg-surface/80 backdrop-blur-xl shadow-[0_10px_40px_-10px_rgba(11,60,93,0.08)]">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-bold text-primary tracking-tighter font-headline">
+                Freiocea Logistics
+            </div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-on-surface-variant hover:text-primary transition-colors font-manrope font-semibold tracking-tight" href="#">Services</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-manrope font-semibold tracking-tight" href="#">About</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-manrope font-semibold tracking-tight" href="#">Technology</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-manrope font-semibold tracking-tight" href="#">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="hidden lg:block px-5 py-2 text-primary font-semibold hover:bg-surface-bright transition-all duration-200 scale-95 active:scale-90">Track Shipment</button>
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-xl font-headline font-bold shadow-lg hover:shadow-primary/20 transition-all scale-95 active:scale-90">Request a Quote</button>
+</div>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-[921px] flex items-center overflow-hidden bg-surface">
+<div class="max-w-7xl mx-auto px-8 w-full grid lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7 z-10">
+<span class="inline-block px-4 py-1.5 rounded-full bg-secondary-container/10 text-secondary font-label text-xs font-bold tracking-widest mb-6">NEXT-GEN SUPPLY CHAIN</span>
+<h1 class="text-5xl lg:text-7xl font-headline font-extrabold text-primary leading-[1.1] tracking-tight mb-8">
+                        Freight, Simplified.<br/>Delivered with Precision.
+                    </h1>
+<p class="text-xl text-on-surface-variant leading-relaxed max-w-xl mb-10">
+                        Modern logistics infrastructure for fast, reliable shipping across the US. We combine architectural precision with real-time tracking to move your business forward.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<button class="hero-gradient text-on-primary px-8 py-4 rounded-xl font-headline font-bold text-lg flex items-center gap-2 group transition-all hover:scale-105 active:scale-95 shadow-xl shadow-primary/20">
+                            Request Quote
+                            <span class="material-symbols-outlined text-xl group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+<button class="bg-surface-container-high text-on-surface px-8 py-4 rounded-xl font-headline font-bold text-lg transition-all hover:bg-surface-variant active:scale-95">
+                            Track Shipment
+                        </button>
+</div>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="aspect-square rounded-[2rem] overflow-hidden shadow-2xl rotate-3 bg-surface-container-lowest p-4">
+<img class="w-full h-full object-cover rounded-[1.5rem]" data-alt="Modern high-tech shipping containers in a sunlight terminal" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1HvftrPznQXwoc-mDI_IzDKoL7D3bZbvUBkCGzV410fe-LirAO4ytfIpsOXaY6VwrsEJ2fGsC2ABQ724MzB3v5mxSh-BZe0yTvvhsNAAJBn5uGUJuUYrSng85wsBnmM4301t6pMP1iLQNEZ2BBH4sohrL1GF51BJdYYebV4CRCIEMNBGe7EAjBln_a7Sst_d8PYtRb3gunJ4VqnohdYedV644OpLBviiRG5XVgU-Ce6CEh3_vkTbqgashaLA004oNgNjqDfLCqBQ"/>
+</div>
+<div class="absolute -bottom-8 -left-8 glass-card p-6 rounded-2xl shadow-xl max-w-xs border border-white/20">
+<div class="flex items-center gap-4 mb-4">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-white" style="font-variation-settings: 'FILL' 1;">local_shipping</span>
+</div>
+<div>
+<p class="text-[10px] font-label font-bold text-secondary uppercase tracking-widest">Live Status</p>
+<p class="font-headline font-bold text-primary">In Transit - LAX</p>
+</div>
+</div>
+<div class="h-1 w-full bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-secondary-container w-2/3"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Background Decoration -->
+<div class="absolute top-0 right-0 -z-10 w-1/3 h-full bg-surface-container-low skew-x-12 transform translate-x-20"></div>
+</section>
+<!-- Services Section -->
+<section class="py-32 bg-surface">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+<div class="max-w-2xl">
+<h2 class="text-4xl font-headline font-bold text-primary mb-6">Comprehensive Freight Solutions</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed">Tailored logistics strategies designed for speed, efficiency, and full visibility. No hidden routes, no surprises.</p>
+</div>
+<a class="text-secondary font-headline font-bold flex items-center gap-2 border-b-2 border-secondary/20 pb-1 hover:border-secondary transition-all" href="#">
+                        View All Services
+                        <span class="material-symbols-outlined">north_east</span>
+</a>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- FTL -->
+<div class="group bg-surface-container-lowest p-8 rounded-[2rem] transition-all hover:bg-primary-container hover:-translate-y-2">
+<div class="w-14 h-14 rounded-2xl bg-surface-container flex items-center justify-center mb-8 group-hover:bg-on-primary-container/20 transition-colors">
+<span class="material-symbols-outlined text-primary text-3xl group-hover:text-white" data-icon="truck">fire_truck</span>
+</div>
+<h3 class="text-xl font-headline font-bold text-primary mb-4 group-hover:text-white">Full Truckload (FTL)</h3>
+<p class="text-on-surface-variant group-hover:text-on-primary-container leading-relaxed">Exclusive capacity for large shipments requiring dedicated direct transit across long distances.</p>
+</div>
+<!-- LTL -->
+<div class="group bg-surface-container-lowest p-8 rounded-[2rem] transition-all hover:bg-primary-container hover:-translate-y-2">
+<div class="w-14 h-14 rounded-2xl bg-surface-container flex items-center justify-center mb-8 group-hover:bg-on-primary-container/20 transition-colors">
+<span class="material-symbols-outlined text-primary text-3xl group-hover:text-white" data-icon="package_2">package_2</span>
+</div>
+<h3 class="text-xl font-headline font-bold text-primary mb-4 group-hover:text-white">Less-Than-Truckload</h3>
+<p class="text-on-surface-variant group-hover:text-on-primary-container leading-relaxed">Cost-effective shipping for smaller freight volumes without compromising on delivery speed.</p>
+</div>
+<!-- Expedited -->
+<div class="group bg-surface-container-lowest p-8 rounded-[2rem] transition-all hover:bg-primary-container hover:-translate-y-2">
+<div class="w-14 h-14 rounded-2xl bg-surface-container flex items-center justify-center mb-8 group-hover:bg-on-primary-container/20 transition-colors">
+<span class="material-symbols-outlined text-primary text-3xl group-hover:text-white" data-icon="bolt">bolt</span>
+</div>
+<h3 class="text-xl font-headline font-bold text-primary mb-4 group-hover:text-white">Expedited Shipping</h3>
+<p class="text-on-surface-variant group-hover:text-on-primary-container leading-relaxed">Time-critical logistics for urgent shipments that need to be delivered within tight windows.</p>
+</div>
+<!-- Warehousing -->
+<div class="group bg-surface-container-lowest p-8 rounded-[2rem] transition-all hover:bg-primary-container hover:-translate-y-2">
+<div class="w-14 h-14 rounded-2xl bg-surface-container flex items-center justify-center mb-8 group-hover:bg-on-primary-container/20 transition-colors">
+<span class="material-symbols-outlined text-primary text-3xl group-hover:text-white" data-icon="warehouse">warehouse</span>
+</div>
+<h3 class="text-xl font-headline font-bold text-primary mb-4 group-hover:text-white">Smart Warehousing</h3>
+<p class="text-on-surface-variant group-hover:text-on-primary-container leading-relaxed">Strategic storage solutions with real-time inventory management and seamless distribution.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Freiocea: Trust Metrics -->
+<section class="py-32 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid lg:grid-cols-2 gap-24 items-center">
+<div>
+<h2 class="text-4xl font-headline font-bold text-primary mb-12">The Precision Advantage</h2>
+<div class="space-y-12">
+<div class="flex gap-6">
+<div class="shrink-0 w-12 h-12 rounded-full border-2 border-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">public</span>
+</div>
+<div>
+<h4 class="text-lg font-headline font-bold text-primary mb-2">Nationwide Coverage</h4>
+<p class="text-on-surface-variant">A robust network spanning all 50 states, ensuring your cargo reaches even the most remote locations with ease.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="shrink-0 w-12 h-12 rounded-full border-2 border-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">support_agent</span>
+</div>
+<div>
+<h4 class="text-lg font-headline font-bold text-primary mb-2">24/7 Operations</h4>
+<p class="text-on-surface-variant">Round-the-clock monitoring and support. We never sleep so your supply chain doesn't have to either.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="shrink-0 w-12 h-12 rounded-full border-2 border-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<div>
+<h4 class="text-lg font-headline font-bold text-primary mb-2">Tier-1 Reliability</h4>
+<p class="text-on-surface-variant">A 99.8% on-time delivery record backed by rigorous safety protocols and vetting standards.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-primary-container rounded-[3rem] p-12 text-on-primary relative overflow-hidden">
+<div class="relative z-10">
+<div class="mb-12">
+<p class="font-label uppercase tracking-widest text-on-primary-container text-sm font-bold mb-4">Live Performance</p>
+<div class="text-6xl font-headline font-extrabold mb-2">1.2M+</div>
+<p class="text-on-primary-container text-lg">Shipments managed annually with zero major disruptions.</p>
+</div>
+<div class="grid grid-cols-2 gap-8 pt-12 border-t border-on-primary-container/20">
+<div>
+<div class="text-3xl font-headline font-bold mb-1">4.9/5</div>
+<p class="text-on-primary-container text-sm uppercase font-bold tracking-wider">Client Rating</p>
+</div>
+<div>
+<div class="text-3xl font-headline font-bold mb-1">15 min</div>
+<p class="text-on-primary-container text-sm uppercase font-bold tracking-wider">Avg Response</p>
+</div>
+</div>
+</div>
+<!-- Abstract decoration -->
+<div class="absolute bottom-0 right-0 w-64 h-64 bg-secondary opacity-10 rounded-full blur-3xl -mb-32 -mr-32"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Animated Map Section (Visual Representation) -->
+<section class="py-32 bg-surface overflow-hidden">
+<div class="max-w-7xl mx-auto px-8 text-center mb-16">
+<h2 class="text-4xl font-headline font-bold text-primary mb-4">Always Moving, Always Visible</h2>
+<p class="text-on-surface-variant text-lg">Real-time telemetry across our entire North American infrastructure.</p>
+</div>
+<div class="max-w-6xl mx-auto px-8 relative">
+<div class="bg-surface-container-high aspect-[21/9] rounded-[2.5rem] relative overflow-hidden shadow-inner border border-outline-variant/20">
+<img class="w-full h-full object-cover opacity-40 grayscale" data-alt="Stylized gray world map with glowing nodes" data-location="United States" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWXyj5w03WQFnz-rR4zj3tBpgOHlIrf_dEldrdo2VMW34gkvErzxwMBGG-0r7ru2O8Iopmtm5HTQ_1p9QVRocf9TOuZZhJ9rt4cjgjcvkBuMlvN4ZOTHeVUpXcz01qnm52JotWrfLYVsnRzWyKq5YiTr3W0YIFpNe5m8Uf1THFz1qrL_ELtVvFRAU6AZJnu0K2qyR3GZtxEO1_SHb0PUa9cxcRBPHwUaiSEnK7oNETkuS-Ck_WgQgG4T_dlFR2--9m_NftgQC42eM"/>
+<!-- Pulsing Hotspots (Simulated Routes) -->
+<div class="absolute top-1/4 left-1/4 w-3 h-3 bg-secondary-container rounded-full animate-ping"></div>
+<div class="absolute top-1/4 left-1/4 w-2 h-2 bg-secondary-container rounded-full"></div>
+<div class="absolute bottom-1/3 right-1/4 w-3 h-3 bg-secondary-container rounded-full animate-ping"></div>
+<div class="absolute bottom-1/3 right-1/4 w-2 h-2 bg-secondary-container rounded-full"></div>
+<div class="absolute top-1/2 left-1/2 w-3 h-3 bg-secondary-container rounded-full animate-ping"></div>
+<div class="absolute top-1/2 left-1/2 w-2 h-2 bg-secondary-container rounded-full"></div>
+<!-- Glowing Route Lines (SVG Overlay) -->
+<svg class="absolute inset-0 w-full h-full pointer-events-none" viewbox="0 0 1000 400">
+<path class="opacity-40" d="M250,100 Q500,50 750,266" fill="none" stroke="#fb7800" stroke-dasharray="5,5" stroke-width="2"></path>
+<path class="opacity-40" d="M250,100 Q350,200 500,200" fill="none" stroke="#fb7800" stroke-dasharray="5,5" stroke-width="2"></path>
+<path class="opacity-40" d="M500,200 Q625,233 750,266" fill="none" stroke="#fb7800" stroke-dasharray="5,5" stroke-width="2"></path>
+</svg>
+<!-- Floating Fleet Card -->
+<div class="absolute top-8 right-8 glass-card p-4 rounded-xl border border-white/30 shadow-2xl hidden md:block">
+<div class="flex items-center gap-3 mb-2">
+<span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+<p class="text-[10px] font-bold uppercase tracking-widest text-primary">Fleet Telemetry Active</p>
+</div>
+<div class="space-y-2">
+<div class="flex justify-between gap-8">
+<span class="text-xs text-on-surface-variant">Active Units</span>
+<span class="text-xs font-bold text-primary">4,192</span>
+</div>
+<div class="flex justify-between gap-8">
+<span class="text-xs text-on-surface-variant">On-Time %</span>
+<span class="text-xs font-bold text-primary">99.8%</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-24 max-w-7xl mx-auto px-8">
+<div class="hero-gradient rounded-[3rem] p-12 lg:p-24 text-center relative overflow-hidden">
+<div class="relative z-10 max-w-3xl mx-auto">
+<h2 class="text-4xl lg:text-5xl font-headline font-extrabold text-white mb-8">Ready to move your freight with precision?</h2>
+<p class="text-on-primary-container text-xl mb-12">Join 500+ enterprises that trust Freiocea for their critical supply chain operations.</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<button class="bg-secondary-container text-on-secondary-container px-10 py-4 rounded-xl font-headline font-bold text-lg hover:bg-secondary-fixed transition-all shadow-xl shadow-black/20">
+                            Request a Quote
+                        </button>
+<button class="bg-white/10 text-white backdrop-blur-md border border-white/20 px-10 py-4 rounded-xl font-headline font-bold text-lg hover:bg-white/20 transition-all">
+                            Contact Sales Team
+                        </button>
+</div>
+</div>
+<!-- Abstract geometry -->
+<div class="absolute top-0 right-0 w-96 h-96 bg-secondary opacity-10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+<div class="absolute bottom-0 left-0 w-64 h-64 bg-on-primary-container opacity-5 rounded-full blur-2xl translate-y-1/2 -translate-x-1/2"></div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low">
+<div class="grid grid-cols-4 gap-12 w-full px-12 py-16 max-w-7xl mx-auto">
+<div class="col-span-4 lg:col-span-1">
+<div class="text-xl font-black text-primary font-headline mb-6">Freiocea Logistics</div>
+<p class="text-on-surface-variant mb-6 text-sm leading-relaxed">High-performance logistics built for the modern enterprise. Architectural precision in every mile.</p>
+<div class="flex gap-4">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-primary cursor-pointer hover:bg-primary hover:text-white transition-all">
+<span class="material-symbols-outlined text-sm">share</span>
+</div>
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-primary cursor-pointer hover:bg-primary hover:text-white transition-all">
+<span class="material-symbols-outlined text-sm">link</span>
+</div>
+</div>
+</div>
+<div class="col-span-2 lg:col-span-1">
+<h5 class="text-primary font-bold mb-6 font-headline">Company</h5>
+<ul class="space-y-4">
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors text-body-md" href="#">About Us</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors text-body-md" href="#">Our Network</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors text-body-md" href="#">Careers</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors text-body-md" href="#">Press</a></li>
+</ul>
+</div>
+<div class="col-span-2 lg:col-span-1">
+<h5 class="text-primary font-bold mb-6 font-headline">Services</h5>
+<ul class="space-y-4">
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors text-body-md" href="#">FTL Shipping</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors text-body-md" href="#">LTL Shipping</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors text-body-md" href="#">Expedited</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors text-body-md" href="#">Warehousing</a></li>
+</ul>
+</div>
+<div class="col-span-4 lg:col-span-1">
+<h5 class="text-primary font-bold mb-6 font-headline">Newsletter</h5>
+<p class="text-on-surface-variant text-sm mb-4">Get the latest logistics insights and market trends.</p>
+<div class="flex gap-2">
+<input class="bg-surface-container-lowest border-outline-variant/30 rounded-lg text-sm w-full focus:ring-secondary-container" placeholder="Email" type="email"/>
+<button class="bg-primary text-white p-2 rounded-lg hover:bg-primary-container transition-all">
+<span class="material-symbols-outlined">send</span>
+</button>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-12 py-8 border-t border-outline-variant/10 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-on-surface-variant text-xs font-label">© 2024 Freiocea Logistics. All Systems Operational.</p>
+<div class="flex gap-8">
+<a class="text-on-surface-variant hover:text-secondary transition-colors text-xs font-label uppercase tracking-widest" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors text-xs font-label uppercase tracking-widest" href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+</body></html>

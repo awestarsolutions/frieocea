@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "inverse-primary": "#a3cbf2",
+              "secondary": "#994700",
+              "primary-container": "#0b3c5d",
+              "background": "#f8f9fa",
+              "secondary-container": "#fb7800",
+              "on-tertiary-fixed-variant": "#663e0e",
+              "on-secondary-fixed": "#321200",
+              "outline-variant": "#c2c7ce",
+              "surface-container-high": "#e7e8e9",
+              "error-container": "#ffdad6",
+              "secondary-fixed-dim": "#ffb68b",
+              "on-tertiary-fixed": "#2c1600",
+              "on-surface-variant": "#42474e",
+              "surface-container-low": "#f3f4f5",
+              "on-primary-container": "#7fa7cd",
+              "tertiary": "#371d00",
+              "on-tertiary-container": "#ce9760",
+              "outline": "#72777e",
+              "surface-variant": "#e1e3e4",
+              "on-secondary-fixed-variant": "#753400",
+              "surface": "#f8f9fa",
+              "surface-tint": "#396285",
+              "on-primary-fixed": "#001d32",
+              "surface-container": "#edeeef",
+              "on-error": "#ffffff",
+              "surface-container-highest": "#e1e3e4",
+              "on-error-container": "#93000a",
+              "on-primary": "#ffffff",
+              "primary-fixed": "#cee5ff",
+              "tertiary-container": "#553001",
+              "surface-bright": "#f8f9fa",
+              "surface-container-lowest": "#ffffff",
+              "inverse-surface": "#2e3132",
+              "on-tertiary": "#ffffff",
+              "primary": "#00263f",
+              "on-surface": "#191c1d",
+              "tertiary-fixed-dim": "#f6bb80",
+              "inverse-on-surface": "#f0f1f2",
+              "on-background": "#191c1d",
+              "error": "#ba1a1a",
+              "tertiary-fixed": "#ffdcbd",
+              "on-secondary": "#ffffff",
+              "secondary-fixed": "#ffdbc8",
+              "primary-fixed-dim": "#a3cbf2",
+              "on-secondary-container": "#592600",
+              "surface-dim": "#d9dadb",
+              "on-primary-fixed-variant": "#1f4a6c"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .gradient-primary {
+            background: linear-gradient(135deg, #00263f 0%, #0b3c5d 100%);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-secondary-container/30">
+<!-- TopNavBar -->
+<nav class="docked full-width top-0 sticky z-50 bg-surface/80 backdrop-blur-xl shadow-[0_10px_40px_-10px_rgba(11,60,93,0.08)]">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-bold text-primary tracking-tighter font-headline">Freiocea Logistics</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-primary font-bold border-b-2 border-secondary font-manrope font-semibold tracking-tight" href="#">Services</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-manrope font-semibold tracking-tight" href="#">About</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-manrope font-semibold tracking-tight" href="#">Technology</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-manrope font-semibold tracking-tight" href="#">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="hidden lg:block text-on-surface-variant hover:text-primary transition-colors px-4 py-2 font-semibold">Track Shipment</button>
+<button class="gradient-primary text-white px-6 py-2.5 rounded-xl font-bold text-sm hover:scale-95 active:scale-90 transition-transform">Request a Quote</button>
+</div>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative pt-24 pb-16 px-8 overflow-hidden">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7">
+<span class="inline-block py-1 px-3 bg-surface-container-high text-primary font-label text-xs font-bold tracking-widest rounded mb-6">GLOBAL SOLUTIONS</span>
+<h1 class="text-5xl lg:text-7xl font-bold font-headline text-primary leading-[1.1] tracking-tighter mb-8">
+                        Precision moving <br/>at the speed of <span class="text-secondary-container">global trade.</span>
+</h1>
+<p class="text-xl text-on-surface-variant max-w-xl leading-relaxed">
+                        From single pallets to complex multi-modal supply chains, Freiocea delivers architectural logistics designed for modern enterprise.
+                    </p>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="aspect-square bg-surface-container-low rounded-3xl overflow-hidden shadow-2xl">
+<img alt="Logistics Network" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="Modern logistics shipping port with containers" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxkC2fmcAEpG3x4TXQSdPntpKfbydijoMRRugNyjSO1EgpLAXHlI3IA1RhwbOKh3jC_igyt-WrlRTIs_Klmt0EXbcUEfj7zpm__cHTgM3GloDs2lbsN6NRHjo_DXcLHr0-Sqhr-m9ZxT5fVvCiUmQPGzVy7ySuiUu7yRNo2XVdfafQCx-diqPoxl7XsFeMd-dLiSgugjhP5A9fjpPVuC1vMrPPEKCAH1nydrWdMUbxRDGbQJQkIilp14ouD4hqWbEj8vHAsmlIx_4"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Section: Modal Excellence -->
+<section class="py-24 px-8 bg-surface-container-low">
+<div class="max-w-7xl mx-auto">
+<div class="mb-16">
+<h2 class="text-3xl font-bold font-headline text-primary mb-4">Modal Excellence</h2>
+<div class="h-1 w-24 bg-secondary-container"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- FTL -->
+<div class="bg-surface-container-lowest p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 group">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center mb-6 group-hover:bg-primary-container group-hover:text-white transition-colors">
+<span class="material-symbols-outlined" data-icon="local_shipping">local_shipping</span>
+</div>
+<h3 class="text-xl font-bold font-headline text-primary mb-4">FTL (Full Truckload)</h3>
+<p class="text-on-surface-variant mb-6 leading-relaxed">Dedicated capacity for large shipments, offering maximum speed, security, and direct point-to-point transit across North America.</p>
+<ul class="space-y-3 text-sm font-medium text-on-surface">
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary-container"></span>Dedicated Equipment</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary-container"></span>No Mid-Transit Handling</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary-container"></span>High-Value Security</li>
+</ul>
+</div>
+<!-- LTL -->
+<div class="bg-surface-container-lowest p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 group">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center mb-6 group-hover:bg-primary-container group-hover:text-white transition-colors">
+<span class="material-symbols-outlined" data-icon="inventory_2">inventory_2</span>
+</div>
+<h3 class="text-xl font-bold font-headline text-primary mb-4">LTL (Less Than Truckload)</h3>
+<p class="text-on-surface-variant mb-6 leading-relaxed">Cost-efficient consolidation services. Leverage our massive network to move smaller loads without paying for empty space.</p>
+<ul class="space-y-3 text-sm font-medium text-on-surface">
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary-container"></span>Volume-Based Pricing</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary-container"></span>Regional Consolidation</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary-container"></span>Lift-Gate Availability</li>
+</ul>
+</div>
+<!-- Expedited -->
+<div class="bg-surface-container-lowest p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 group">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center mb-6 group-hover:bg-primary-container group-hover:text-white transition-colors">
+<span class="material-symbols-outlined" data-icon="speed">speed</span>
+</div>
+<h3 class="text-xl font-bold font-headline text-primary mb-4">Expedited Freight</h3>
+<p class="text-on-surface-variant mb-6 leading-relaxed">Time-critical shipping for urgent needs. 24/7 monitoring and prioritized transit paths to meet tight production deadlines.</p>
+<ul class="space-y-3 text-sm font-medium text-on-surface">
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary-container"></span>Team Drivers (Non-stop)</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary-container"></span>Priority Dispatch</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary-container"></span>White Glove Handling</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Section: Specialized Solutions (Bento Grid) -->
+<section class="py-24 px-8 bg-surface">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+<div class="max-w-2xl">
+<h2 class="text-3xl font-bold font-headline text-primary mb-4">Specialized Solutions</h2>
+<p class="text-on-surface-variant leading-relaxed">Integrated services that bridge the gaps in your supply chain. We don't just move freight; we engineer workflows.</p>
+</div>
+<div class="hidden md:block h-[1px] flex-grow mx-12 bg-outline-variant/30"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 h-auto md:h-[600px]">
+<!-- Warehousing -->
+<div class="md:col-span-8 relative rounded-3xl overflow-hidden group">
+<img alt="Warehouse" class="w-full h-full object-cover brightness-50 group-hover:scale-105 transition-transform duration-1000" data-alt="Vast high-tech automated warehouse facility" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjrliJC79ZrkouePATy8xTw-ns0259F3GLq52n8Alo50E6IjvuQTt2gbT7ocXLAmsNG-dLudWuVsFJHJlKppPzpBdqnRWO2UyNfOuqgOOMQzJHaEtTH8nHAkkJACqBJhk8djnqU_yuqKs_YmmqQud5D_zdhmP5cnTRTINSyGU7BWR0RSjkXj7KBnUxp_c46UUxT-s1-QqAMjXsYFmmwDxuEcT43o7XSFwwb_OGPrSrNtX-sgAI6woVnfkKH-bdQtvdKM0xwECIND0"/>
+<div class="absolute inset-0 p-12 flex flex-col justify-end bg-gradient-to-t from-primary/90 to-transparent">
+<h3 class="text-3xl font-bold text-white mb-4">Warehousing</h3>
+<p class="text-primary-fixed max-w-md mb-6">Strategic inventory management with climate-controlled facilities and real-time WMS integration.</p>
+<button class="w-fit border border-primary-fixed/30 text-white px-6 py-2 rounded-xl text-sm font-bold backdrop-blur-md hover:bg-white hover:text-primary transition-colors">Explore Facilities</button>
+</div>
+</div>
+<!-- Brokerage & Intermodal Column -->
+<div class="md:col-span-4 flex flex-col gap-6">
+<div class="flex-1 bg-surface-container-high p-10 rounded-3xl flex flex-col justify-center">
+<span class="material-symbols-outlined text-secondary-container mb-6 text-4xl" data-icon="handshake">handshake</span>
+<h3 class="text-xl font-bold text-primary mb-2">Brokerage</h3>
+<p class="text-on-surface-variant text-sm">Access to 50,000+ vetted carriers for ultimate flexibility and market-competitive rates.</p>
+</div>
+<div class="flex-1 bg-primary-container p-10 rounded-3xl flex flex-col justify-center text-white">
+<span class="material-symbols-outlined text-secondary-container mb-6 text-4xl" data-icon="train">train</span>
+<h3 class="text-xl font-bold mb-2">Intermodal</h3>
+<p class="text-on-primary-container text-sm">Optimized rail and road combinations to reduce carbon footprint and long-haul costs.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section: Technology Integration -->
+<section class="py-24 px-8 bg-surface-container-low border-y border-outline-variant/10">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold font-headline text-primary mb-6">The Intelligence Engine</h2>
+<p class="text-on-surface-variant max-w-2xl mx-auto">We replace guesswork with data. Our proprietary platform provides transparency at every milestone.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<div class="glass-card p-10 rounded-3xl border border-white/50 flex gap-8 items-start">
+<div class="shrink-0 w-16 h-16 rounded-2xl bg-primary flex items-center justify-center text-white">
+<span class="material-symbols-outlined text-3xl" data-icon="sensors">sensors</span>
+</div>
+<div>
+<h3 class="text-2xl font-bold text-primary mb-4">Real-time Telemetry</h3>
+<p class="text-on-surface-variant leading-relaxed mb-4">GPS-tracked positioning updated every 12 seconds. Monitor temperature, humidity, and shock sensor data directly from your client dashboard.</p>
+<span class="text-secondary font-bold text-sm tracking-tight inline-flex items-center gap-2">ACTIVE MONITORING <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span></span>
+</div>
+</div>
+<div class="glass-card p-10 rounded-3xl border border-white/50 flex gap-8 items-start">
+<div class="shrink-0 w-16 h-16 rounded-2xl bg-primary flex items-center justify-center text-white">
+<span class="material-symbols-outlined text-3xl" data-icon="auto_settings">auto_mode</span>
+</div>
+<div>
+<h3 class="text-2xl font-bold text-primary mb-4">Automated Dispatch</h3>
+<p class="text-on-surface-variant leading-relaxed mb-4">AI-driven routing that predicts weather delays and traffic congestion to reroute drivers in real-time, ensuring 99.4% on-time delivery.</p>
+<span class="text-secondary font-bold text-sm tracking-tight inline-flex items-center gap-2">SMART ROUTING ENABLED</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section: Ready to Ship? -->
+<section class="py-24 px-8">
+<div class="max-w-5xl mx-auto gradient-primary rounded-[2rem] p-12 lg:p-20 text-center relative overflow-hidden shadow-2xl">
+<!-- Abstract visual element -->
+<div class="absolute -top-24 -right-24 w-64 h-64 bg-secondary-container/20 rounded-full blur-3xl"></div>
+<div class="absolute -bottom-24 -left-24 w-64 h-64 bg-primary-fixed-dim/10 rounded-full blur-3xl"></div>
+<div class="relative z-10">
+<h2 class="text-4xl lg:text-5xl font-bold font-headline text-white mb-8">Ready to Ship?</h2>
+<p class="text-on-primary-container text-xl max-w-2xl mx-auto mb-12">
+                        Experience the precision of Freiocea. Get a customized quote for your specific logistics needs in under 15 minutes.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<button class="bg-secondary-container text-on-secondary-container px-10 py-4 rounded-xl font-black text-lg hover:scale-105 transition-transform shadow-lg shadow-black/20">Request a Quote</button>
+<button class="bg-white/10 backdrop-blur-md text-white border border-white/20 px-10 py-4 rounded-xl font-bold text-lg hover:bg-white/20 transition-all">Speak with an Expert</button>
+</div>
+<p class="mt-8 text-on-primary-container/60 text-sm font-medium uppercase tracking-[0.2em]">Zero commitment • Expert consultation</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low mt-24">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 w-full px-12 py-16 max-w-7xl mx-auto">
+<div class="col-span-1 md:col-span-1">
+<div class="text-xl font-black text-primary font-headline mb-6">Freiocea Logistics</div>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">
+                    Engineering the future of global supply chains through precision, technology, and unwavering trust.
+                </p>
+<div class="flex gap-4">
+<a class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-primary hover:text-secondary transition-colors" href="#">
+<span class="material-symbols-outlined text-sm" data-icon="share">share</span>
+</a>
+</div>
+</div>
+<div>
+<h4 class="font-bold text-primary mb-6">Company</h4>
+<ul class="space-y-4 text-on-surface-variant text-sm">
+<li><a class="hover:text-secondary transition-colors" href="#">About Us</a></li>
+<li><a class="hover:text-secondary transition-colors" href="#">Our Careers</a></li>
+<li><a class="hover:text-secondary transition-colors" href="#">Partners</a></li>
+<li><a class="hover:text-secondary transition-colors" href="#">Press Room</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-primary mb-6">Resources</h4>
+<ul class="space-y-4 text-on-surface-variant text-sm">
+<li><a class="hover:text-secondary transition-colors" href="#">Tracking</a></li>
+<li><a class="hover:text-secondary transition-colors" href="#">Documentation</a></li>
+<li><a class="hover:text-secondary transition-colors" href="#">Support Center</a></li>
+<li><a class="hover:text-secondary transition-colors" href="#">Carrier Portal</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-primary mb-6">Stay Informed</h4>
+<p class="text-xs text-on-surface-variant mb-4">Get the latest logistics insights and market updates.</p>
+<div class="flex gap-2">
+<input class="bg-surface-container-lowest border border-outline-variant/30 rounded-lg px-4 py-2 text-sm focus:outline-none focus:border-secondary-container w-full" placeholder="Email address" type="email"/>
+<button class="bg-primary text-white px-4 py-2 rounded-lg hover:opacity-90 transition-opacity">
+<span class="material-symbols-outlined text-sm" data-icon="send">send</span>
+</button>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-12 py-8 border-t border-outline-variant/10 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-on-surface-variant text-xs font-body opacity-80">© 2024 Freiocea Logistics. All Systems Operational.</p>
+<div class="flex gap-8 text-xs font-medium text-on-surface-variant">
+<a class="hover:text-secondary transition-colors" href="#">Legal</a>
+<a class="hover:text-secondary transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-secondary transition-colors" href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+</body></html>
