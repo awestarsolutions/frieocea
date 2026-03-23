@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 8.0.45, for Linux (x86_64)
 --
--- Host: 127.0.0.1    Database: frieocea
+-- Host: localhost    Database: frieocea
 -- ------------------------------------------------------
 -- Server version	8.0.45-0ubuntu0.24.04.1
 
@@ -82,7 +82,7 @@ CREATE TABLE `contacts` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -91,7 +91,7 @@ CREATE TABLE `contacts` (
 
 LOCK TABLES `contacts` WRITE;
 /*!40000 ALTER TABLE `contacts` DISABLE KEYS */;
-INSERT INTO `contacts` VALUES (1,'Ashish Awasthi','ashishawasthiwork@gmail.com',NULL,'sdadasda','read','2026-03-19 09:32:40','2026-03-19 09:35:36');
+INSERT INTO `contacts` VALUES (1,'Ashish Awasthi','ashishawasthiwork@gmail.com',NULL,'sdadasda','read','2026-03-19 09:32:40','2026-03-19 09:35:36'),(2,'ashishcoin','ashishawasthi346@gmail.com',NULL,'sadsdf','unread','2026-03-23 11:36:47','2026-03-23 11:36:47');
 /*!40000 ALTER TABLE `contacts` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -320,7 +320,7 @@ CREATE TABLE `sessions` (
 
 LOCK TABLES `sessions` WRITE;
 /*!40000 ALTER TABLE `sessions` DISABLE KEYS */;
-INSERT INTO `sessions` VALUES ('BLtK0sEwDdT0Om50tvzXDSKId7hO0OZiUSsSwOyT',1,'127.0.0.1','Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36','YTo0OntzOjY6Il90b2tlbiI7czo0MDoiNHJaNkFJRDlXOHk5OEtrdHhnaTR6WmlMa3hHQ0hYalppaXluS2hlSyI7czo5OiJfcHJldmlvdXMiO2E6Mjp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMCI7czo1OiJyb3V0ZSI7czo0OiJob21lIjt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo1MDoibG9naW5fd2ViXzU5YmEzNmFkZGMyYjJmOTQwMTU4MGYwMTRjN2Y1OGVhNGUzMDk4OWQiO2k6MTt9',1774285436),('esdkpzug2PZVli4AmH9BcWKyDBEPD9qDkREuZiXv',NULL,'127.0.0.1','curl/8.5.0','YToyOntzOjY6Il90b2tlbiI7czo0MDoiRFQ1NjBudVYybHZKREdmdXFLeEJXQ3kyRnU4SEl1ZFVoVUtxWFg1QSI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319fQ==',1774268144),('nKqRHqBduzbteuQTCmcFEPLgywr5FDD0Ike8z9jH',NULL,'127.0.0.1','curl/8.5.0','YToyOntzOjY6Il90b2tlbiI7czo0MDoicnFEYjZxbFczcDdKemx0eE0xWUJKVk1zT1EwYWpZOUJZcWtqM293SCI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319fQ==',1774269099),('p9yvFGVNj4RVlKc3jsqDAwfQIJm042Rtai5AGD5p',NULL,'127.0.0.1','curl/8.5.0','YToyOntzOjY6Il90b2tlbiI7czo0MDoielJleHE1NFZZS1gwbW9TUmVtaTFGTGY3WkJrTWx5SzhKSjlLSmZRUCI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319fQ==',1774269215),('sSPZckfGTNpbzpd4z27z9LaTk1qgFiZzR0l12r7k',NULL,'127.0.0.1','curl/8.5.0','YToyOntzOjY6Il90b2tlbiI7czo0MDoiV0g5aWdhalBoRzFsZ1phQ3EzM0FPUGpaVXMwN1NieWc0MVUyRVJIeiI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319fQ==',1774268329),('t8y2vAMnHMq91VsxAN7dO7xlzMNF4xEGZW70iTO4',1,'127.0.0.1','Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36','YTo1OntzOjY6Il90b2tlbiI7czo0MDoiWDN4Q1ZNSEZySTZGTmsxUE1oNTRxYTI0dU5rTml3RllFZnJyYjlObSI7czo5OiJfcHJldmlvdXMiO2E6Mjp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMCI7czo1OiJyb3V0ZSI7czo0OiJob21lIjt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czozOiJ1cmwiO2E6MDp7fXM6NTA6ImxvZ2luX3dlYl81OWJhMzZhZGRjMmIyZjk0MDE1ODBmMDE0YzdmNThlYTRlMzA5ODlkIjtpOjE7fQ==',1774270942);
+INSERT INTO `sessions` VALUES ('BLtK0sEwDdT0Om50tvzXDSKId7hO0OZiUSsSwOyT',1,'127.0.0.1','Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36','YTo0OntzOjY6Il90b2tlbiI7czo0MDoiNHJaNkFJRDlXOHk5OEtrdHhnaTR6WmlMa3hHQ0hYalppaXluS2hlSyI7czo5OiJfcHJldmlvdXMiO2E6Mjp7czozOiJ1cmwiO3M6Mzc6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9hZG1pbi9kYXNoYm9hcmQiO3M6NToicm91dGUiO3M6MTU6ImFkbWluLmRhc2hib2FyZCI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fXM6NTA6ImxvZ2luX3dlYl81OWJhMzZhZGRjMmIyZjk0MDE1ODBmMDE0YzdmNThlYTRlMzA5ODlkIjtpOjE7fQ==',1774285621),('esdkpzug2PZVli4AmH9BcWKyDBEPD9qDkREuZiXv',NULL,'127.0.0.1','curl/8.5.0','YToyOntzOjY6Il90b2tlbiI7czo0MDoiRFQ1NjBudVYybHZKREdmdXFLeEJXQ3kyRnU4SEl1ZFVoVUtxWFg1QSI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319fQ==',1774268144),('nKqRHqBduzbteuQTCmcFEPLgywr5FDD0Ike8z9jH',NULL,'127.0.0.1','curl/8.5.0','YToyOntzOjY6Il90b2tlbiI7czo0MDoicnFEYjZxbFczcDdKemx0eE0xWUJKVk1zT1EwYWpZOUJZcWtqM293SCI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319fQ==',1774269099),('p9yvFGVNj4RVlKc3jsqDAwfQIJm042Rtai5AGD5p',NULL,'127.0.0.1','curl/8.5.0','YToyOntzOjY6Il90b2tlbiI7czo0MDoielJleHE1NFZZS1gwbW9TUmVtaTFGTGY3WkJrTWx5SzhKSjlLSmZRUCI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319fQ==',1774269215),('sSPZckfGTNpbzpd4z27z9LaTk1qgFiZzR0l12r7k',NULL,'127.0.0.1','curl/8.5.0','YToyOntzOjY6Il90b2tlbiI7czo0MDoiV0g5aWdhalBoRzFsZ1phQ3EzM0FPUGpaVXMwN1NieWc0MVUyRVJIeiI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319fQ==',1774268329),('t8y2vAMnHMq91VsxAN7dO7xlzMNF4xEGZW70iTO4',1,'127.0.0.1','Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36','YTo1OntzOjY6Il90b2tlbiI7czo0MDoiWDN4Q1ZNSEZySTZGTmsxUE1oNTRxYTI0dU5rTml3RllFZnJyYjlObSI7czo5OiJfcHJldmlvdXMiO2E6Mjp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMCI7czo1OiJyb3V0ZSI7czo0OiJob21lIjt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czozOiJ1cmwiO2E6MDp7fXM6NTA6ImxvZ2luX3dlYl81OWJhMzZhZGRjMmIyZjk0MDE1ODBmMDE0YzdmNThlYTRlMzA5ODlkIjtpOjE7fQ==',1774270942);
 /*!40000 ALTER TABLE `sessions` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -348,7 +348,7 @@ CREATE TABLE `settings` (
 
 LOCK TABLES `settings` WRITE;
 /*!40000 ALTER TABLE `settings` DISABLE KEYS */;
-INSERT INTO `settings` VALUES (1,'site_name','Freiocea Logistics','2026-03-17 08:53:26','2026-03-17 08:53:26'),(2,'email','solutions@freiocea.com','2026-03-17 08:53:26','2026-03-17 08:53:26'),(3,'phone','+1 (555) FREIGHT','2026-03-17 08:53:26','2026-03-17 08:53:26'),(4,'address','123 Logistics Way\r\nSuite 500\r\nOceanview, CA 90210','2026-03-17 08:53:26','2026-03-23 11:33:52'),(5,'meta_description','Freiocea Logistics provides premium, dynamic freight solutions including FTL, LTL, and expedited shipping with real-time tracking.','2026-03-17 08:53:26','2026-03-17 08:53:26'),(6,'logo','logos/evFGstGAXp9x9xooBzwbENK8pvggZa1YTb4Mjpq9.png','2026-03-23 11:33:52','2026-03-23 11:33:52');
+INSERT INTO `settings` VALUES (1,'site_name','Freiocea Logistics','2026-03-17 08:53:26','2026-03-17 08:53:26'),(2,'email','solutions@freiocea.com','2026-03-17 08:53:26','2026-03-17 08:53:26'),(3,'phone','+1 (555) FREIGHT','2026-03-17 08:53:26','2026-03-17 08:53:26'),(4,'address','123 Logistics Way\r\nSuite 500\r\nOceanview, CA 90210','2026-03-17 08:53:26','2026-03-23 11:33:52'),(5,'meta_description','Freiocea Logistics provides premium, dynamic freight solutions including FTL, LTL, and expedited shipping with real-time tracking.','2026-03-17 08:53:26','2026-03-17 08:53:26'),(6,'logo','logos/dFbCPDtDzjhk8A7SAAFa2iycH09fbFCV7IDdBbmY.png','2026-03-23 11:33:52','2026-03-23 11:36:10');
 /*!40000 ALTER TABLE `settings` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -422,4 +422,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-03-23 22:34:47
+-- Dump completed on 2026-03-23 23:13:11
